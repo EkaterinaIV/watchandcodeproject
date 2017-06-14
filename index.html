@@ -2,8 +2,33 @@
 <html>
 <head>
     <title>Watch and Code Project</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
 <body>
-<script type="text/javascript" src="js/main.js"></script>
+    <h1>Todo List</h1>
+    <div>
+        <button onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
+    <div>
+        <input id="addTodoTextInput" type="text">
+        <button onclick="handlers.addTodo()">Add</button>
+    </div>
+    <div>
+        <input type="number" id="changeTodoPositionInput">
+        <input type="text" id="changeTodoTextInput">
+        <button onclick="handlers.changeTodo()">Change</button>
+    </div>
+    <div>
+        <input type="number" id="deleteTodoPositionInput">
+        <button onclick="handlers.deleteTodo()">Delete</button>
+    </div>
+    <div>
+        <input type="number" id="toggleCompletedPositionInput">
+        <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+    </div>
+
+    <ul></ul>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
