@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Watch and Code Project</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+<main>
     <h1>Todo List</h1>
+        <div class="checkbox  glyphicon glyphicon-ok">
+        <input type="checkbox" id="toggleAllCheckbox" disabled>
+        <label for="toggleAllCheckbox"></label>
+        </div>
+      <header class="input-group">
+      <input type="text" id="textAddTodoInput" class="form-control">
+      <div class="input-group-btn"><button onclick="handlers.addTodo()" class="glyphicon glyphicon-plus btn btn-default"></button></div>
+    </header>
     <div>
-        <button onclick="handlers.toggleAll()">Toggle All</button>
+      <ul></ul>
     </div>
-    <div>
-        <input id="addTodoTextInput" type="text">
-        <button onclick="handlers.addTodo()">Add</button>
-    </div>
-    <div>
-        <input type="number" id="changeTodoPositionInput">
-        <input type="text" id="changeTodoTextInput">
-        <button onclick="handlers.changeTodo()">Change</button>
-    </div>
-    <div>
-        <input type="number" id="toggleCompletedPositionInput">
-        <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
-    </div>
-
-    <ul></ul>
-    <script type="text/javascript" src="js/main.js"></script>
+    <footer></footer>
+  </main>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
