@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ToDo List</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ToDo List</h1>
+        </div>
+        <div class="main">
+            <div class="addPanel">
+                <div class="toggleAllLabel">
+                    <input type="checkbox" id="toggleAllCheckbox" name="toggleAll" disabled>
+                    <label for="toggleAll"></label>
+                </div>
+                <div class="addTodo">
+                    <input type="text" id="textAddTodoInput">
+                    <button onclick="handlers.addTodo()" class="addBtn">Add</button>
+                </div>
+            </div>
+            <div class="todoList">
+                <ul></ul>
+            </div>
+            <div class="footerPanel"></div>
+        </div>
+        <div class="footer"></div>
+    </main>
+</body>
+</html>
